@@ -8,15 +8,15 @@ export default class Counter extends Component {
 
     }
 
-    multiplement=()=>{
-        const onMultipliy=this.props.onMultipliy;
+    multiplement= () =>{
         const multipleNum=this.inputText.current.value;
+        const onMultipliy=this.props.onMultipliy;
         onMultipliy(multipleNum,this.props.index);
 
     }
 
     render() {
-        const { value, onIncrement, onDecrement,index} = this.props;
+        const {value, onIncrement, onDecrement, index} = this.props;
         return (
             <div className="App">
                 <p>

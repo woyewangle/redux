@@ -10,15 +10,15 @@ class App extends Component {
 
 
     render(){
-        const {values,onIncrement,onDecrement,onMultipliy}=this.props;
+        // const {values,onIncrement,onDecrement,onMultipliy}=this.props;
         return(
             <div className="App">
             <CounterGroup
                 amount={2}
-                values={values}
-                onIncrement={onIncrement}
-                onDecrement={onDecrement}
-                onMultipliy={onMultipliy}
+                // values={values}
+                // onIncrement={onIncrement}
+                // onDecrement={onDecrement}
+                // onMultipliy={onMultipliy}
             />
             </div>
         );
