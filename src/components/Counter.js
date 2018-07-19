@@ -15,6 +15,11 @@ export default class Counter extends Component {
 
     }
 
+    Delay1=()=>{
+        const onIncrement=this.props.onIncrement;
+        setTimeout(() => {onIncrement(this.props.index)}, 1000)
+    }
+
     render() {
         const {value, onIncrement, onDecrement, index} = this.props;
         return (
@@ -31,6 +36,8 @@ export default class Counter extends Component {
                     <input type="text" defaultValue={0} ref={this.inputText}/>
                     <button onClick={this.multiplement}>
                         *
+                    </button>
+                    <button onClick={this.Delay1}>Increment Async
                     </button>
                 </p >
 
